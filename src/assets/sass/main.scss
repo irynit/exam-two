@@ -568,10 +568,17 @@
       &-name,
       &-email {
         width: 100%;
+        height: 41px;
         border: none;
-        //todo: add style when input in focus (clicked)
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        position: relative;
 
-        &[placeholder] {
+        &::placeholder {
           font-family: 'Montserrat';
           font-style: normal;
           font-weight: 400;
@@ -580,7 +587,17 @@
           color: #4B5562;
           opacity: 0.5;
           padding-bottom: 14px;
+          border-bottom: 1px solid grey;
+        }
+
+        &[type="text"]:focus {
           border-bottom: 1px solid #2C4058;
+          color: #000000;
+        }
+
+        &[type="email"]:focus {
+          border-bottom: 1px solid #2C4058;
+          color: #000000;
         }
       }
 
