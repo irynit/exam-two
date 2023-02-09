@@ -79,14 +79,34 @@
 
         <!-- Heading section -->
         <!-- Container with slides -->
-        <div class="header__heading-slide">
-          <h1 class="header__heading-title">SIMPLE & MODERN</h1>
-          <p class="header__heading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-          <div class="header__heading-arrow">
-            <img src="/img/arrow.png" alt="">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1 class="header__heading-title">SIMPLE & MODERN</h1>
+              <p class="header__heading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="header__heading-title">SIMPLE & MODERN 2</h1>
+              <p class="header__heading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="header__heading-title">SIMPLE & MODERN 3</h1>
+              <p class="header__heading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="header__heading-title">SIMPLE & MODERN 4</h1>
+              <p class="header__heading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="header__heading-title">SIMPLE & MODERN 5</h1>
+              <p class="header__heading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-
+        <div class="header__heading-arrow">
+          <img src="/img/arrow.png" alt="">
+        </div>
         <!-- Container with slides end -->
         <!-- Heading section end-->
       </div>
@@ -322,6 +342,18 @@
   <!-- Required for JS -->
   <script> var exports = {}; </script>
   <script src="@@webRoot/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>
